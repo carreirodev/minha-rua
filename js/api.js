@@ -17,6 +17,8 @@ inputCep.onkeyup = async (evento) => {
 
 	//extraindo json da resposta
 	const conteudoResposta = await resposta.json();
+
+	//prenchendo o HTML
 	inputRua.value = conteudoResposta.street;
 	inputBairro.value = conteudoResposta.neighborhood;
 	inputUF.value = conteudoResposta.state;
